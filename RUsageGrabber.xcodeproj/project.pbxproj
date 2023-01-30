@@ -7,19 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A60719196D0F6A36032E815F /* RUsageGrabber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6071DFB06C240D35EA08158 /* RUsageGrabber.swift */; };
 		DAB483F52981BDBF00309167 /* RUsageGrabberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB483F42981BDBF00309167 /* RUsageGrabberApp.swift */; };
 		DAB483F72981BDBF00309167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAB483F62981BDBF00309167 /* ContentView.swift */; };
 		DAB483F92981BDC000309167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB483F82981BDC000309167 /* Assets.xcassets */; };
 		DAB483FD2981BDC000309167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB483FC2981BDC000309167 /* Preview Assets.xcassets */; };
+		DAB484062981C18F00309167 /* TESTING.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB484052981C18F00309167 /* TESTING.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6071DFB06C240D35EA08158 /* RUsageGrabber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RUsageGrabber.swift; sourceTree = "<group>"; };
 		DAB483F12981BDBF00309167 /* RUsageGrabber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUsageGrabber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB483F42981BDBF00309167 /* RUsageGrabberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RUsageGrabberApp.swift; sourceTree = "<group>"; };
 		DAB483F62981BDBF00309167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DAB483F82981BDC000309167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB483FA2981BDC000309167 /* RUsageGrabber.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RUsageGrabber.entitlements; sourceTree = "<group>"; };
 		DAB483FC2981BDC000309167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DAB484042981C18F00309167 /* RUsageGrabber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RUsageGrabber-Bridging-Header.h"; sourceTree = "<group>"; };
+		DAB484052981C18F00309167 /* TESTING.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TESTING.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,9 @@
 				DAB483F82981BDC000309167 /* Assets.xcassets */,
 				DAB483FA2981BDC000309167 /* RUsageGrabber.entitlements */,
 				DAB483FB2981BDC000309167 /* Preview Content */,
+				A6071DFB06C240D35EA08158 /* RUsageGrabber.swift */,
+				DAB484052981C18F00309167 /* TESTING.m */,
+				DAB484042981C18F00309167 /* RUsageGrabber-Bridging-Header.h */,
 			);
 			path = RUsageGrabber;
 			sourceTree = "<group>";
@@ -101,6 +109,7 @@
 				TargetAttributes = {
 					DAB483F02981BDBF00309167 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -141,6 +150,8 @@
 			files = (
 				DAB483F72981BDBF00309167 /* ContentView.swift in Sources */,
 				DAB483F52981BDBF00309167 /* RUsageGrabberApp.swift in Sources */,
+				DAB484062981C18F00309167 /* TESTING.m in Sources */,
+				A60719196D0F6A36032E815F /* RUsageGrabber.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RUsageGrabber/RUsageGrabber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -289,6 +301,8 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RUsageGrabber/RUsageGrabber-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -299,6 +313,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = RUsageGrabber/RUsageGrabber.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -327,6 +342,7 @@
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "RUsageGrabber/RUsageGrabber-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

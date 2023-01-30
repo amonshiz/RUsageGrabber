@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct RUsageGrabberApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+    let grabber = RUsageGrabber()
+  var body: some Scene {
+    WindowGroup {
+        ContentView(grabber: grabber)
     }
+  }
 }
